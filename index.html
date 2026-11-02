@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8f9fb"><meta name="description" content="Bilans — jasan pregled projekata, troškova i profitabilnosti.">
+  <title>Bilans · Finansije projekata</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%235c51d9'/%3E%3Cpath d='M11 27V17h5v10zm8 0V10h5v17zm8 0V21h5v6z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="finance.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+ <aside class="sidebar" id="sidebar">
+  <a class="brand" href="#pregled" aria-label="Bilans početna"><span class="brand-mark"><i></i><i></i><i></i></span>bilans<span class="brand-dot">.</span></a>
+  <div class="workspace"><div class="workspace-icon">S</div><div><strong>Studio Forma</strong><small>Radni prostor</small></div><span class="workspace-chevron">⌄</span></div>
+  <div class="nav-caption">RADNI PROSTOR</div>
+  <nav id="navigation" aria-label="Glavna navigacija"></nav>
+  <div class="sidebar-note"><span class="note-icon">✧</span><strong>Sve brojke. Jasna slika.</strong><p>Pratite svaki projekat od prvog ugovora do poslednje uplate.</p><button class="text-link" id="demoInfo">O demo aplikaciji <span>↗</span></button></div>
+  <div class="profile"><div class="avatar">MP</div><div><strong>Marko Petrović</strong><small>Administrator · demo</small></div><span class="online-dot"></span></div>
+ </aside>
+ <div class="shell">
+  <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" id="menuToggle" aria-label="Otvori navigaciju">☰</button><span>Radni prostor</span><span class="crumb-slash">/</span><strong id="crumb">Pregled</strong></div><div class="header-right"><span class="demo-badge"><i></i> Demo prostor</span><span class="top-date">2. novembar 2026.</span><button class="icon-button" id="notifications" aria-label="Otvori dospele obaveze"></button><div class="mini-avatar">MP</div></div></header>
+  <main id="main" tabindex="-1"></main>
+  <footer><span>© 2026 Bilans <span class="footer-dot">·</span> Vaši projekti, pod kontrolom.</span><span><i class="save-dot"></i> Podaci se čuvaju u ovom pregledaču</span></footer>
+ </div>
+ <dialog id="dialog" aria-labelledby="dialogTitle"><div id="dialogContent"></div></dialog>
+ <div class="toast" id="toast" role="status"></div>
+</body></html>
